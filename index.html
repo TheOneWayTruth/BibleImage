@@ -1,0 +1,44 @@
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="script.js"> </script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width">
+  <title>BibleStellenCreator</title>
+</head>
+<body>
+  <div class="settings">
+    <div class="Text">
+      <label>Text ändern</label>
+      <textarea id="textarea">Es ist aber der Glaube eine feste Zuversicht auf das, was man hofft, eine Überzeugung von Tatsachen, die man nicht sieht.</textarea>
+      <label>Bibelstelle</label>
+      <input id="versInp" type="text" value="Hebräer 11.1"/>
+    </div>
+    <div class="imgIn">
+          <label>Bild hochladen </label>
+          <input type='file' id="imgInp" />
+          <button id="uploadbtn">Hochladen</button>
+          <label>Bild Url laden </label>
+          <input type="text" id="imgTex"/>
+          <label>Bild aus Zwischenablage einfügen</label>
+          <input type="text" id="imgpaste" />
+          <p>Feld auswählen und (Strg + V) drücken</p>
+          <i class="fas fa-sync"></i>
+          <p id="pasteerror">Dies ist kein gültiges Bild.</p>
+    </div>
+
+  </div>
+<i class="strg fas fa-arrow-right"></i>
+<i class="strg fas fa-arrow-left"></i>
+<div class="main" id="cap">
+  <p id="inhalt">Es ist aber der <span class="big">Glaube</span>
+  eine feste <span class="big">Zuversicht</span> auf das, was man hofft,
+  eine <span class="big">Überzeugung</span> von <span class="big">Tatsachen</span>,
+  die man <span class="big">nicht sieht</span>.</p>
+  <span class="vers">Hebräer 11.1</span>
+</div>
+</body>
+</html>
